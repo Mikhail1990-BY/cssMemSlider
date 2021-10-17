@@ -125,7 +125,7 @@ label::after {
 }
 
 #slide4:checked~.slider-dot-control label:nth-child(4)::after{
-    content: "what else can I do? it's a deadline";
+    content: "recognize yourself";
     margin-left: -763px;
 }
 
@@ -151,14 +151,41 @@ label::after {
 #slide4:checked~.slider-wrapper .inner{
     margin-left:-300%;
 }
-#slide5:checked~.slider-wrapper .inner{
-    margin-left:-400%;
-}
 
-
-@media screen and (max-width: 450px){
+@media screen and (max-width: 375px){
     .slider-dot-control{
         justify-content: center;
         margin-top: 2em;
+    }
+
+    label::after {
+        margin-top: 3.2em;
+        margin-left: 0;
+    }
+    label:nth-child(3):after {
+        margin-left: -85px;
+    }
+    label:nth-child(4):after {
+        margin-left: -115px;
+    }
+    #slide1:checked~.slider-dot-control label:nth-child(1)::after{
+        content: "futile hopes";
+        margin-left: -114px;
+        width: 100px;
+    }
+    #slide2:checked~.slider-dot-control label:nth-child(2)::after{
+        content: "life is tough";
+        margin-left: -153px;
+        width: 100px;
+    }
+    #slide3:checked~.slider-dot-control label:nth-child(3)::after{
+        content: "me during completing rsschool tasks";
+        margin-left: -193px;
+        width: 250px;
+    }
+    #slide4:checked~.slider-dot-control label:nth-child(4)::after{
+        content: "recognize yourself";
+        margin-left: -230px;
+        width: 200px;
     }
 }
