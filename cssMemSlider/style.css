@@ -1,25 +1,28 @@
 body {
     background-color: #202325;
     height: 100%;
+    font-family: 'Roboto', sans-serif;
 }
 .wrapper{
     max-width:49em;
     margin:1em auto;
-    position:relative;
 }
+
 input{
     display:none;
 }
+
 .inner{
     width:500%;
     line-height:0;
 }
+
 article{
     max-height: 37em;
     width:20%;
     float:left;
-    position:relative;
 }
+
 article img{
     width:100%;
     max-height: 37em;
@@ -32,6 +35,7 @@ article img{
     margin-top: 2em;
     display: flex;
 }
+
 .slider-dot-control label{
     cursor:pointer;
     border-radius:50%;
@@ -48,9 +52,11 @@ article img{
     padding: 0;
     position: relative;
 }
+
 .labels {
     display: flex;
 }
+
 .slider-dot-control label:nth-child(4) {
     margin-right: -0.6em;
 }
@@ -75,6 +81,7 @@ article img{
     -moz-transition:all .5s ease-out;
     transition:all .5s ease-out;
 }
+
 .slider-wrapper .inner{
     -webkit-transform:translateZ(0);
     -moz-transform:translateZ(0);
@@ -93,6 +100,7 @@ article img{
     background-color: #202325;
     box-shadow: 0px 0px 1px 2px #72adff inset;
 }
+
 label::after {
     content: "";
     color: #fff;
@@ -101,6 +109,7 @@ label::after {
     margin-left: -340px;
     font-size: 17px;
 }
+
 #slide1:checked~.slider-dot-control label:nth-child(1)::after,
 #slide2:checked~.slider-dot-control label:nth-child(2)::after,
 #slide3:checked~.slider-dot-control label:nth-child(3)::after,
@@ -108,9 +117,10 @@ label::after {
     opacity: 1;
     transition: 0.8s;
 }
+
 #slide1:checked~.slider-dot-control label:nth-child(1)::after{
     content: "futile hopes";
-    margin-left: -640px;
+    margin-left: -646px;
     
 }
 
@@ -120,7 +130,7 @@ label::after {
 }
 
 #slide3:checked~.slider-dot-control label:nth-child(3)::after{
-    content: "me during completing rsschool tasks";
+    content: "me completing rsschool tasks";
     margin-left: -725px;
 }
 
@@ -129,7 +139,6 @@ label::after {
     margin-left: -763px;
 }
 
-
 #slide1:checked~.slider-dot-control label:nth-child(1):hover,
 #slide2:checked~.slider-dot-control label:nth-child(2):hover,
 #slide3:checked~.slider-dot-control label:nth-child(3):hover,
@@ -137,10 +146,10 @@ label::after {
     box-shadow: 0px 0px 1px 2px #fff inset;
 }
 
-
 #slide1:checked~.slider-wrapper .inner{
     margin-left:0;
 }
+
 #slide2:checked~.slider-wrapper .inner{
     margin-left:-100%;
 }
@@ -148,11 +157,16 @@ label::after {
 #slide3:checked~.slider-wrapper .inner{
     margin-left:-200%;
 }
+
 #slide4:checked~.slider-wrapper .inner{
     margin-left:-300%;
 }
 
 @media screen and (max-width: 375px){
+    img {
+        height: 22.625em;
+    }
+
     .slider-dot-control{
         justify-content: center;
         margin-top: 2em;
@@ -162,27 +176,33 @@ label::after {
         margin-top: 3.2em;
         margin-left: 0;
     }
+
     label:nth-child(3):after {
         margin-left: -85px;
     }
+
     label:nth-child(4):after {
         margin-left: -115px;
     }
+
     #slide1:checked~.slider-dot-control label:nth-child(1)::after{
         content: "futile hopes";
         margin-left: -114px;
         width: 100px;
     }
+
     #slide2:checked~.slider-dot-control label:nth-child(2)::after{
         content: "life is tough";
         margin-left: -153px;
         width: 100px;
     }
+
     #slide3:checked~.slider-dot-control label:nth-child(3)::after{
-        content: "me during completing rsschool tasks";
+        content: "me completing rsschool tasks";
         margin-left: -193px;
         width: 250px;
     }
+
     #slide4:checked~.slider-dot-control label:nth-child(4)::after{
         content: "recognize yourself";
         margin-left: -230px;
